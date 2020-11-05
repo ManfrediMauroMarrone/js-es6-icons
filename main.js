@@ -96,3 +96,22 @@ const icons = [
         family: 'fas'
     }
 ];
+
+
+icons.forEach((icon) => {
+  // console.log(icon);
+
+  const {name,prefix,family} = icon
+
+  console.log(name,prefix,family);
+
+  $('.icons-container').append(`
+    <div>
+      <i class="${family} ${prefix}${name}"></i>
+      <span>${name}</span>
+    </div>
+    `);
+
+
+
+});

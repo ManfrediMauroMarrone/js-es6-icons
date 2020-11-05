@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.icons-container{
+  width: 1200px;
+  height: 800px;
+  margin: auto;
+  border: 1px solid black;
+}
