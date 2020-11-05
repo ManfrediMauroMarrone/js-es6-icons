@@ -138,3 +138,24 @@ icons.forEach((icon) => {
   `);
 
 });
+
+// scorro tutti i tipi di icona
+iconTypes.forEach((type) => {
+  // aggiungo un'opzione alla select per ogni tipo di icona
+  // seleziono la select e appendo una option
+  $('#icon-selector').append(`
+    <option value="${type}">${type}</option>
+
+    `)
+
+});
+
+$('#icon-selector').change(() =>{
+  // recupero il tipo selezionato dall'utente, corrisponde al valore della select
+  const selectedType = $('#icon-selector').val()
+
+  console.log(selectedType);
+  // visualizzo solo le icone del tipo corrispondente
+  // svuoto il contenitore
+  $('#icons-container').empty();
+})
