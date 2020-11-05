@@ -110,8 +110,22 @@ icons.forEach((icon) => {
       <i class="${family} ${prefix}${name}"></i>
       <span>${name}</span>
     </div>
-    `);
-
-
+  `);
 
 });
+
+
+const colors = ['purple', 'tomato', 'lightgreen'];
+
+const iconTypes = [];
+
+icons.forEach((icon) => {
+
+  const {type} = icon
+
+  if (!iconTypes.includes(type)) {
+    iconTypes.push(type)
+  }
+})
+
+console.log(iconTypes);
